@@ -30,7 +30,7 @@ var dbConfig = {
     database: "Test"
         };
         
-        //Function to connect to database and execute query
+//Function to connect to database and execute query
 var  executeQuery = function(res, query){
 sql.connect(dbConfig, function (err) {
     if (err) {
