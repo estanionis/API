@@ -52,7 +52,7 @@ request.query(query, function (err, res) {
     });
         }
     });
-}
+};
                 
 //GET API
 app.get("/api/user", function(req , res){
