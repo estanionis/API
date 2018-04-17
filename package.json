@@ -20,6 +20,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "jshint": "^2.9.5",
     "mssql": "^4.1.0",
     "sql": "^0.78.0"
   }
