@@ -24,10 +24,10 @@ var server = app.listen(process.env.PORT || 8080, function () {
 
 //Initiallising connection string
 var dbConfig = {
-    user: "user",
-    password: "user",
+    user: "SA",
+    password: "Nie1Kas2",
     server: "localhost",
-    database: "Test"
+    database: "TestDB"
         };
         
 //Function to connect to database and execute query
@@ -56,24 +56,60 @@ request.query(query, function (err, res) {
                 
 //GET API
 app.get("/api/user", function(req , res){
-    var query = "select * from [user]";
+    var query = "select * from [T1]";
     executeQuery (res, query);
 });
 
 //POST API
  app.post("/api/user", function(req , res){
-    var query = "INSERT INTO [user] (Name,Email,Password) VALUES (req.body.Name,req.body.Email,req.body.Password";
+    var query = "INSERT INTO [T1] (Name,Email,Password) VALUES (req.body.Name,req.body.Email,req.body.Password";
     executeQuery (res, query);
 });
 
 //PUT API
  app.put("/api/user/:id", function(req , res){
-    var query = "UPDATE [user] SET Name= " + req.body.Name  +  " , Email=  " + req.body.Email + "  WHERE Id= " + req.params.id;
+    var query = "UPDATE [T1] SET Name= " + req.body.Name  +  " , Email=  " + req.body.Email + "  WHERE Id= " + req.params.id;
     executeQuery (res, query);
 });
 
 // DELETE API
  app.delete("/api/user /:id", function(req , res){
-    var query = "DELETE FROM [user] WHERE Id=" + req.params.id;
+    var query = "DELETE FROM [T1] WHERE Id=" + req.params.id;
+    executeQuery (res, query);
+});
+
+//POST API
+ app.post("/api/user", function(req , res){
+    var query = "INSERT INTO [T1] (Name,Email,Password) VALUES (req.body.Name,req.body.Email,req.body.Password";
+    executeQuery (res, query);
+});
+
+//PUT API
+ app.put("/api/user/:id", function(req , res){
+    var query = "UPDATE [T1] SET Name= " + req.body.Name  +  " , Email=  " + req.body.Email + "  WHERE Id= " + req.params.id;
+    executeQuery (res, query);
+});
+
+// DELETE API
+ app.delete("/api/user /:id", function(req , res){
+    var query = "DELETE FROM [T1] WHERE Id=" + req.params.id;
+    executeQuery (res, query);
+});
+
+//POST API
+ app.post("/api/user", function(req , res){
+    var query = "INSERT INTO [T1] (Name,Email,Password) VALUES (req.body.Name,req.body.Email,req.body.Password";
+    executeQuery (res, query);
+});
+
+//PUT API
+ app.put("/api/user/:id", function(req , res){
+    var query = "UPDATE [T1] SET Name= " + req.body.Name  +  " , Email=  " + req.body.Email + "  WHERE Id= " + req.params.id;
+    executeQuery (res, query);
+});
+
+// DELETE API
+ app.delete("/api/user /:id", function(req , res){
+    var query = "DELETE FROM [T1] WHERE Id=" + req.params.id;
     executeQuery (res, query);
 });
