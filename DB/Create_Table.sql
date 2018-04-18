@@ -1,4 +1,4 @@
--- Create a new table called 'Employees' in schema 'dbo'
+-- Create a new table called 'T1' in schema 'dbo'
 -- Drop the table if it already exists
 IF OBJECT_ID('dbo.T1', 'U') IS NOT NULL
 DROP TABLE dbo.T1
