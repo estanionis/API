@@ -1,2 +1,4 @@
-SELECT * 
-FROM [TestDB].[dbo].[T1]
+SELECT
+  *
+FROM
+  [TestDB].[dbo].[T1]
