@@ -1,4 +1,3 @@
 SELECT
   *
-FROM
-  [TestDB].[dbo].[T1]
+  FROM[TestDB].[dbo].[T1]
