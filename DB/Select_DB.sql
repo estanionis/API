@@ -1,3 +1,8 @@
 SELECT
   *
-  FROM[TestDB].[dbo].[T1]
+  FROM Employee;
+  GO
+SELECT
+  * 
+  FROM EmployeeInfo;
+  GO
